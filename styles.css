@@ -24,9 +24,14 @@ body {
     display: flex;
 }
 
-.player-score {
+#player-score {
     margin: 2rem;
 }
+
+#computer-score {
+    margin: 2rem;
+}
+
 
 .footer {
     padding-top: 100%;
