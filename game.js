@@ -1,15 +1,14 @@
-console.log(getComputerChoice());
-
-const rock = 0;
-const paper = 1;
-const scissors = 2;
+const computerChoice = ["rock", "paper", "scissors"]
+let playerScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
-    return parseInt((Math.random())*3);
+    return computerChoice[Math.floor((Math.random())*3)];
 }
 
-function getPlayerChoice() {
-    let userChoice = prompt("Choose: Rock, Paper or Scissors.");
-    return userChoice;
-}
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.querySelector("scissors");
 
+
+console.log(rock);

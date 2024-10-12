@@ -6,7 +6,18 @@ body {
     align-items: center;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-    
+    color: #1FC742;
+    background-color: #010101;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset {
+    display: none;
 }
 
 .score {
@@ -18,5 +29,39 @@ body {
 }
 
 .footer {
-    padding-top: 42%;
+    padding-top: 100%;
+}
+
+.btn {
+    padding: 1rem;
+    margin: 1rem;
+    color: #1FC742;
+    background: #010101;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1FC742;
+}
+
+.btn:hover {
+    padding: 1.1rem;
+    margin: 1rem;
+    color: #010101;
+    background: #1FC742;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1FC742;
+    cursor: pointer;
+}
+
+.btn:active {
+    padding: 1.1rem;
+    margin: 1rem;
+    color: #010101;
+    background: #1FC742;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1FC742;
+    cursor: pointer;
+    box-shadow: 0 5px #929292;
+    transform: translateX(2px) translateY(2px);
 }
