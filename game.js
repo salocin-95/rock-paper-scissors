@@ -1,9 +1,10 @@
-const computerChoice = ["rock", "paper", "scissors"]
 let playerScore = 0;
 let computerScore = 0;
 
 function getComputerChoice() {
-    return computerChoice[Math.floor((Math.random())*3)];
+    const options = ["rock", "paper", "scissors"]
+    const randomIndex = [Math.floor((Math.random())*options.length)];
+    return options[randomIndex];
 }
 
 const rock = document.getElementById("rock");
