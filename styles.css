@@ -20,6 +20,10 @@ body {
     display: none;
 }
 
+h2 {
+    margin: 0;
+}
+
 .score {
     display: flex;
 }
@@ -32,10 +36,6 @@ body {
     margin: 2rem;
 }
 
-
-.footer {
-    padding-top: 100%;
-}
 
 .btn {
     padding: 1rem;
@@ -69,4 +69,8 @@ body {
     cursor: pointer;
     box-shadow: 0 5px #929292;
     transform: translateX(2px) translateY(2px);
+}
+
+.footer {
+    padding-top: 100%;
 }
