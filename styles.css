@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.score {
+    display: flex;
+}
+
+.player-score {
+    margin: 2rem;
+}
+
+.footer {
+    padding-top: 42%;
+}
