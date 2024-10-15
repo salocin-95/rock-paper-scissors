@@ -1,6 +1,8 @@
+// Need to add function that prevents player to keep playing after "Play again?" button appears
 const playerScoreDisplay = document.getElementById('player-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 const resultsMessage = document.querySelector('.message');
+// Make the buttons dissappear
 const resetButton = document.getElementById('reset');
 
 let playerScore = 0;

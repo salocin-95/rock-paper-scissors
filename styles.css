@@ -73,5 +73,7 @@ h2 {
 }
 
 .footer {
-    padding-top: 100%;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
 }
