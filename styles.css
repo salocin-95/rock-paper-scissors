@@ -10,10 +10,15 @@ body {
     background-color: #010101;
 }
 
+h1 {
+    text-shadow: 0px 0px 2px #1FC742;    
+}
+
 .reset-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 0px 0px 2px #1FC742;    
 }
 
 #reset {
@@ -23,10 +28,27 @@ body {
 h2 {
     font-size: 1.825rem;
     margin: 0;
+    text-shadow: 0px 0px 2px #1FC742;    
+}
+
+p {
+    text-shadow: 0px 0px 2px #1FC742;
 }
 
 .score {
     display: flex;
+}
+
+.global-score {
+    display: flex;
+}
+
+#player-global-score {
+    margin: 2rem;
+}
+
+#computer-global-score {
+    margin: 2rem;
 }
 
 #player-score {
@@ -46,11 +68,13 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     border: 2px solid #1FC742;
+    transition: 0.1s;
+    text-shadow: 0px 0px 2px #1FC742;    
+    box-shadow:  0px 0px 2px #1FC742;    
 }
 
 .btn:hover {
-    padding: 1.1rem;
-    margin: 1rem;
+    transform: scale(1.2);
     color: #010101;
     background: #1FC742;
     font-size: 16px;
@@ -76,4 +100,5 @@ h2 {
     margin: 5px;
     position: absolute;
     bottom: 0;
+    text-shadow: 0px 0px 2px #1FC742;    
 }

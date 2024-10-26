@@ -2,11 +2,20 @@
 const playerScoreDisplay = document.getElementById('player-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 const resultsMessage = document.querySelector('.message');
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper")
+const scissorsBtn = document.getElementById("scissors");
+const playerGlobalScore = document.getElementById("player-global-score");
+const computerGlobalScore = document.getElementById("computer-global-score");
+
+
 // Make the buttons dissappear
 const resetButton = document.getElementById('reset');
 
 let playerScore = 0;
 let computerScore = 0;
+let playerMatchScore = 0;
+let computerMatchScore = 0;
 // Get computer choice
 function getComputerChoice() {
     const options = ['rock', 'paper', 'scissors']
@@ -51,10 +60,12 @@ userOptions.forEach(userOption => userOption.addEventListener('click', (e) => {
     console.log(computerScore)
     if (playerScore === 3) {
         resultsMessage.innerText = `You won the match!`;
+        playerMatchScore++
         update()
     }
     if (computerScore === 3) {
         resultsMessage.innerText = `You  lost the match!`
+        computerMatchScore++
         update()
     }
 }));
@@ -62,12 +73,20 @@ userOptions.forEach(userOption => userOption.addEventListener('click', (e) => {
 function update() {
     resetButton.style.display = 'block';
     resetButton.innerText = 'Play again?';
+    rockBtn.style.display =  'none';
+    paperBtn.style.display =  'none';
+    scissorsBtn.style.display =  'none';
     playerScore = 0;
     computerScore = 0;
     resetButton.addEventListener('click', (e) => {
         resetButton.style.display = 'none';
+        rockBtn.style.display =  'inline';
+        paperBtn.style.display =  'inline';
+        scissorsBtn.style.display =  'inline';
         resultsMessage.innerHTML = `To play choose an option!`;
-        computerScoreDisplay.innerHTML = `Computer score: ${computerScore}`
-        playerScoreDisplay.innerHTML = `Player score: ${playerScore}`
+        computerScoreDisplay.innerHTML = `Computer score: ${computerScore}`;
+        playerScoreDisplay.innerHTML = `Player score: ${playerScore}`;
+        computerGlobalScore.innerHTML = `Computer Match score: ${computerMatchScore}`;
+        playerGlobalScore.innerHTML = `Player Match score: ${playerMatchScore}`;
     })
 }
